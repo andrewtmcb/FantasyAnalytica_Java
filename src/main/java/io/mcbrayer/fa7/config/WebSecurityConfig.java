@@ -56,7 +56,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		// don't authenticate these requests, may need to add more to the list
 		// especially if I build in a demo feature
-		.authorizeRequests().antMatchers("/authenticate", "/register").permitAll().
+		.authorizeRequests().antMatchers("/authenticate", "/register", "/hello").permitAll().
 		
 		// all other request require authentication
 		anyRequest().authenticated().and().

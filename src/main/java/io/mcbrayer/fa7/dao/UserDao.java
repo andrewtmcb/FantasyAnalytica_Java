@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import io.mcbrayer.fa7.model.User;
 
 @Repository
-public interface UserDao extends JpaRepository<User, Integer>{
+public interface UserDao extends JpaRepository<User, Integer> {
 
-	public User findUserByEmail(String email);
+	public User findByEmail(String email);
 }
